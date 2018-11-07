@@ -10,6 +10,12 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { StartPage } from '../pages/start/start';
+import { MajorPage } from '../pages/major/major';
+import { MinorPage } from '../pages/minor/minor';
+import { NativeAudio } from '@ionic-native/native-audio';
+import { IonicStorageModule } from '@ionic/storage';
+import { NativeStorage } from '@ionic-native/native-storage';
 
 @NgModule({
   declarations: [
@@ -17,7 +23,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    MajorPage,
+    MinorPage,
+    TabsPage,
+    StartPage
   ],
   imports: [
     BrowserModule,
@@ -29,11 +38,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    MajorPage,
+    MinorPage,
+    TabsPage,
+    StartPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    NativeAudio,
+    NativeStorage,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

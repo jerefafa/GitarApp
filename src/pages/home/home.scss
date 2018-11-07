@@ -1,3 +1,32 @@
 page-home {
-
+  ion-content {
+    color: white;
+    p{
+      color: white;
+    }
+    h3{
+      color: white;
+    }
+    img {
+      margin-left: 28%;
+      margin-top: 10%;
+    }
+    .button-choice {
+      background-color: white;
+      color: black;
+      width: 70%;
+    }
+  }
+  .scores {
+    float: right;
+    margin-top: 15%;
+    span {
+      color: white;
+    }
+  }
+  .choices {
+    display: block;
+    margin-left: 22%;
+    margin-top: 10%;
+  }
 }

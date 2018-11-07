@@ -1,0 +1,19 @@
+@import "../../app/app";
+page-start{
+  text-align: center;
+  h1 {
+    color: white;
+  }
+  .contents{
+    margin-top: 40%;
+  }
+
+  .start-button{
+    margin-top: 80%;
+    width: 60%;
+    background-color: white;
+    color: black;
+    margin-left: 20%;
+  }
+}
+
